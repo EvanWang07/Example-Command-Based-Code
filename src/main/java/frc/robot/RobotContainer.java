@@ -4,12 +4,16 @@
 
 package frc.robot;
 
-import frc.robot.commands.ExampleDoubleCommand;
-import frc.robot.commands.ExampleIntegerCommand;
-import frc.robot.commands.ExampleRandomCommand;
-import frc.robot.subsystems.ExampleSubsystem;
+import frc.robot.subsystems.*; // Imports ALL subsystems
+import frc.robot.commands.*; // Imports ALL commands
+/* The use of * indicates the use of a wild card
+ * Wild cards import everything in its "category"
+ * For example, import frc.robot.subsystems.* imports ALL code within frc.robot.subsystems
+ */
+
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.XboxController;
+
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.InstantCommand;
 import edu.wpi.first.wpilibj2.command.button.JoystickButton;
