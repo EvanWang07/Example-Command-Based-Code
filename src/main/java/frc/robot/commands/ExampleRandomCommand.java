@@ -31,6 +31,7 @@ public class ExampleRandomCommand extends Command {
             e_ExampleSubsystem.changeExampleDouble(newDouble);
         }
         /* This if-else statement set determines if the getRandomInteger() or getRandomDouble() method is used to change the given variable
+         * Afterwards, the ExampleInteger or ExampleDouble gets changed to the value of the random result
          * lowerRandomIntegerBounds, upperRandomIntegerBounds, lowerRandomDoubleBounds, and upperRandomDoubleBounds are found in Constants.numberConstants
          */
     }
