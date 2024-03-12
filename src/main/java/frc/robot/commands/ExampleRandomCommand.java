@@ -24,11 +24,13 @@ public class ExampleRandomCommand extends Command {
     @Override
     public void execute() {
         if (useIntegerRandomizer) {
-            e_ExampleSubsystem.getRandomInteger(Constants.numberConstants.lowerRandomIntegerBounds, Constants.numberConstants.upperRandomIntegerBounds);
+            int newInteger = e_ExampleSubsystem.getRandomInteger(Constants.numberConstants.lowerRandomIntegerBounds, Constants.numberConstants.upperRandomIntegerBounds);
+            e_ExampleSubsystem.changeExampleInteger(newInteger);
         } else {
-            e_ExampleSubsystem.getRandomDouble(Constants.numberConstants.lowerRandomDoubleBounds, Constants.numberConstants.upperRandomDoubleBounds);
+            double newDouble = e_ExampleSubsystem.getRandomDouble(Constants.numberConstants.lowerRandomDoubleBounds, Constants.numberConstants.upperRandomDoubleBounds);
+            e_ExampleSubsystem.changeExampleDouble(newDouble);
         }
-        /* This if-else statement set determines if the getRandomInteger() or getRandomDouble() method is used
+        /* This if-else statement set determines if the getRandomInteger() or getRandomDouble() method is used to change the given variable
          * lowerRandomIntegerBounds, upperRandomIntegerBounds, lowerRandomDoubleBounds, and upperRandomDoubleBounds are found in Constants.numberConstants
          */
     }

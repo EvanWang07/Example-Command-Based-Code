@@ -33,7 +33,7 @@ public class ExampleDoubleCommand extends Command { // Commands use subsystems t
          * Constructors are only called when the robot's code is deployed!
          * initialize() methods are called once every time the given command is used!
          * This means it is best to use initialize() to reset a given command function
-         * AND to declare subsystems in the constructor only ONE copy of each subsystem should exist!
+         * AND to declare subsystems in the constructor; only ONE copy of each subsystem should exist!
          */
     }
 
