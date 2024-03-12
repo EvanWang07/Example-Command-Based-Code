@@ -18,7 +18,11 @@ import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.InstantCommand;
 import edu.wpi.first.wpilibj2.command.button.JoystickButton;
 
-public class RobotContainer {
+public class RobotContainer { 
+  /* This is where commands and subsystems are utilized and where joystick bindings are configured
+   * All physical components of the robot are bound to given commands/subsystems HERE
+   * Think of this like the "heart" of the Command-Based code
+   */
 
   private final Joystick variableChanger = new Joystick(Constants.operatorConstants.numberChangerPort);
   /* Declares a joystick (in this case, we use an XBox Controller) named variableChanger

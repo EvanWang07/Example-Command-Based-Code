@@ -40,6 +40,6 @@ public class ExampleIntegerCommand extends Command {
 
     @Override
     public void end(boolean interrupted) { 
-        e_ExampleSubsystem.changeExampleInteger(0); // Changes ExampleInteger to 0 when the command finishes
+        e_ExampleSubsystem.changeExampleInteger(0); // Changes ExampleInteger to 0 when the command finishes or is interrupted
     }
 }

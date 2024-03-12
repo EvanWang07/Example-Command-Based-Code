@@ -38,7 +38,7 @@ public class ExampleDoubleCommand extends Command { // Commands use subsystems t
     }
 
     @Override
-    public void execute() { // This runs 50 times a second. This is where joystick inputs should be considered!
+    public void execute() { // This runs 50 times a second. This is where values from joystick inputs should be considered!
         double e_newDoubleValue = newDoubleValue.getAsDouble(); // Converts a DoubleSupplier to a normal double
         e_ExampleSubsystem.changeExampleDouble(e_newDoubleValue);
     }
