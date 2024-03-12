@@ -19,6 +19,7 @@ public class RobotContainer {
   private final Joystick variableChanger = new Joystick(Constants.operatorConstants.numberChangerPort);
   /* Declares a joystick (in this case, we use an XBox Controller) named variableChanger
    * The parameter is the joystick's port, which was pulled from Constants.operatorConstants.java
+   * Port values of physical joysticks can be changed in the Driver Station
    */
 
   /* Joystick Bindings */
@@ -31,6 +32,10 @@ public class RobotContainer {
   private final JoystickButton n_restoreOldVariables = new JoystickButton(variableChanger, XboxController.Button.kB.value);
   private final JoystickButton n_getRandomInteger = new JoystickButton(variableChanger, XboxController.Button.kLeftBumper.value);
   private final JoystickButton n_getRandomDouble = new JoystickButton(variableChanger, XboxController.Button.kRightBumper.value);
+  /* Links PHYSICAL joystick button buttons to joystick VALUES of JoystickButton OBJECTS/INSTANCES
+   * Make sure the correct joystick (declared earlier) is used and that the correct button is linked
+   * These are used later in the RobotContainer() constructor and the configureBindings() method
+   */
 
   /* Subsystem Declaration; ALL subsystems NEED to be declared ONCE in the robot container */
   private final ExampleSubsystem e_ExampleSubsystem = new ExampleSubsystem();
