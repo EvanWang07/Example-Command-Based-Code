@@ -9,7 +9,7 @@ public final class Constants { // Serves as an easy way to change variables on t
   /* Constants related to the controller and "driving" */
   public static class operatorConstants {
     /* Constants within RobotContainer.java */
-    public static final int numberChangerPort = 0; // Notice that ALL variables here are static final!!!
+    public static final int numberChangerPort = 0; // Notice that ALL variables here are public static final!!!
   }
 
   public static class numberConstants {
